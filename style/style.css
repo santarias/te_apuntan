@@ -23,14 +23,22 @@
   display: flex;
   margin: 10px 0 10px;
   border-radius: 25px;
+  border-style: solid;
+  border-color: #fff;
   width: 70%;
   flex-grow: 1;
+
 }
 
+.tarjeta:hover > .recuadro >img{
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+
+}
 
 .tarjeta .recuadro{
   position: relative;
-  border-right: dashed white;
+  border-right: dashed #fff;
 }
 
 .tarjeta :nth-child(1){
@@ -43,11 +51,16 @@ width: 70%;
   position: absolute;
   width: 150px;
   border-radius: 100px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 10%;
+  /*
+  Con esto centraba las imagenes perfectamente
+  pero al usarlo cuando se giraban bajaban como en una escalera...
+  transform: translate(-50%, -50%);*/
 }
 
 .tarjeta .informacion {
+  text-align: justify;
+  margin-left: 10px;
   width: 70%;
 }
