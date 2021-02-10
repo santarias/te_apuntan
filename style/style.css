@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+
+.interact{
+  align-items: center;
+  text-align: center;
+}
+
+.contenedor{
+  background: #8cf3bd;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta {
+  padding: 12px;
+  text-align: left;
+  background: #52B6CB;
+  display: flex;
+  margin: 10px 0 10px;
+  border-radius: 25px;
+  width: 70%;
+  flex-grow: 1;
+}
+
+
+.tarjeta .recuadro{
+  position: relative;
+  border-right: dashed white;
+}
+
+.tarjeta :nth-child(1){
+width:  30%;
+}
+.tarjeta :nth-child(2){
+width: 70%;
+}
+.tarjeta .recuadro>img{
+  position: absolute;
+  width: 150px;
+  border-radius: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tarjeta .informacion {
+  width: 70%;
+}
