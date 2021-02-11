@@ -17,8 +17,9 @@ h2 { display:inline; }
 .cuerpo {
    background: #8cf3bd;
 }
-
 .contenedor{
+  
+  font-family: 'Josefin Sans', 'Poppins', sans-serif;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
