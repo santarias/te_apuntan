@@ -6,9 +6,11 @@
   align-items: center;
   text-align: center;
 }
+.cuerpo {
+   background: #8cf3bd;
+}
 
 .contenedor{
-  background: #8cf3bd;
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -31,6 +33,12 @@
 }
 
 .tarjeta:hover > .recuadro >img{
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+
+}
+
+.todos:hover ~ .tarjeta > .recuadro >img{
   transition: transform 0.5s;
   transform: rotateY(180deg);
 
