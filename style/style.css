@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 1200px) {
+ .contenedor{
+   width: 1140px;
+ }
+}
+
+h2 { display:inline; }
+
 .interact{
   align-items: center;
   text-align: center;
@@ -12,6 +20,7 @@
 
 .contenedor{
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -44,6 +53,14 @@
 
 }
 
+.tarjeta:hover > .fas{
+  visibility: visible;
+}
+
+.todos:hover ~ .tarjeta > .fas{
+  visibility: visible;
+}
+
 .tarjeta .recuadro{
   position: relative;
   border-right: dashed #fff;
@@ -61,10 +78,6 @@ width: 70%;
   border-radius: 100px;
   top: 10%;
   left: 10%;
-  /*
-  Con esto centraba las imagenes perfectamente
-  pero al usarlo cuando se giraban bajaban como en una escalera...
-  transform: translate(-50%, -50%);*/
 }
 
 .tarjeta .informacion {
@@ -72,3 +85,10 @@ width: 70%;
   margin-left: 10px;
   width: 70%;
 }
+
+.fas {
+  align-items: center;
+  margin-top: 20%;
+  visibility: hidden;
+}
+
