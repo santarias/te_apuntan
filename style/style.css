@@ -53,6 +53,11 @@
   transform: rotateY(180deg);
 
 }
+.tarjeta > .recuadro >img{
+  transition: transform 0.5s;
+  transform: rotateY(0deg);
+
+}
 
 .todos:hover ~ .tarjeta > .recuadro >img{
   transition: transform 0.5s;
@@ -81,8 +86,9 @@ width: 70%;
 }
 .tarjeta .recuadro>img{
   position: absolute;
+  max-width: 100%;
   width: 65%;
-  border-radius: 100px;
+  border-radius: 100%;
   top: 10%;
   left: 10%;
 }
@@ -97,9 +103,28 @@ width: 70%;
 .fas{
   background: white;
   color: green;
-  border-radius: 100px;
+  border-radius: 100%;
   align-items: center;
   margin-top: 20%;
   visibility: hidden;
 }
 
+.tarjeta > .recuadro > .letra_inicial{
+  position: absolute;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin-left: 65%;
+  margin-top: 60%;
+  border-radius: 100%;
+  height: 20%;
+  font-size: 2vw;
+  max-width: 15%;
+ color: #fff;
+ background: rgb(146, 21, 21);
+}
+
+.tarjeta > .recuadro > .letra_inicial > p{
+  margin: 25% 25% 0;
+  text-align: center;
+}
